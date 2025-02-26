@@ -1,0 +1,75 @@
+.suggested-container {
+    margin-top: 20px;
+    padding: 20px;
+    /* background: #f9f9f9; */
+    border-radius: 10px;
+  }
+
+  .suggested-container h1{
+    margin-bottom: 15px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .suggested-wrapper {
+    display: flex;
+    align-items: center; /* Aligns items and button in one row */
+    justify-content: space-between;
+    gap: 20px;
+    overflow-x: auto; /* Enables horizontal scrolling if needed */
+    white-space: nowrap;
+    padding-bottom: 10px;
+  }
+  
+  .suggested-list {
+    display: flex;
+    gap: 20px;
+    flex-grow: 1; /* Allows the list to take available space */
+  }
+  
+  .suggested-item {
+    flex: 0 0 auto; /* Prevents wrapping */
+    width: 200px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    border-color: grey;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .suggested-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .suggested-item .product-name {
+    font-size: 16px;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    word-wrap: break-word;
+    white-space: normal;
+  }
+  
+  .suggested-item .product-price {
+    font-size: 14px;
+    /* color: #333; */
+    font-weight: bold;
+  }
+  
+  .keep-shopping {
+    font-size: 20px;
+    color: #7D2479;
+    text-decoration: none;
+    white-space: nowrap; /* Ensures it stays in one line */
+    margin-left: 10px;
+  }
+  
+  .keep-shopping:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,108 @@
+/* Overall Page Styling */
+.payment-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Payment Status Card */
+  .payment-box {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Title */
+  .congrats {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Success Icon */
+  .success-icon img {
+    width: 60px;
+    height: 60px;
+    margin: 15px 0;
+  }
+  
+  /* Payment Status Text */
+  .status-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2c7d2c;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  /* Order Placed Link */
+  .order-link {
+    text-decoration: none;
+    color: #6a0dad;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .order-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Amount Details */
+  .amount-details {
+    width: 100%;
+    margin: 15px 0;
+    font-size: 16px;
+    color: #444;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    text-align: left;
+  }
+  
+  .amount-details p {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+  }
+  
+  .amount {
+    font-weight: bold;
+  }
+  
+  .paid-amount {
+    font-weight: bold;
+    color: #e63946;
+  }
+  
+  /* Go to Home Button */
+  .home-button {
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+
+  .home-button:hover {
+    background-color: #5a099e;
+  }
+  

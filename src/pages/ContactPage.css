@@ -1,0 +1,251 @@
+/* ContactPage.css */
+.contact-page {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Top Header Section */
+  .contact-header {
+    background-image: url("../assets/Rectangle\ 278.png"); /* Adjust path */
+    /* background-size: cover; */
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white; /* Adjust text color for better visibility */
+    text-align: center;
+    padding: 220px 20px;
+    border-radius: 10px;
+  }
+
+  .top-head{
+    text-align: center;
+    color: white;
+    background-color: #7D2479;
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+  
+  
+  /* Optional: add a semi-transparent overlay for readability */
+  .contact-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background: rgba(107, 44, 124, 0.7); Purple overlay (adjust as needed) */
+    /* or use a gradient:
+    background: linear-gradient(135deg, rgba(107, 44, 124, 0.7), rgba(164, 63, 170, 0.7));
+    */
+    z-index: 0;
+  }
+  
+  .contact-header h1,
+  .contact-header p,
+  .contact-header span {
+    position: relative;
+    z-index: 1; /* So they appear above the overlay */
+  }
+  
+  .contact-header h1 {
+    color: #633640;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact-header p {
+    font-size: 1.3rem;
+    margin-bottom: 0.25rem;
+    font-weight: bold;
+  }
+  
+  .contact-header span {
+    font-size: 0.95rem;
+    opacity: 0.9;
+  }
+  
+  /* Form Section */
+  .contact-form-section {
+    background: #f9ecf0; /* A soft pinkish background */
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+  
+  .contact-form-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+
+
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 60px;
+  }
+  
+  .form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    background: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px; /* Rounded corners */
+    font-size: 16px;
+  }
+ 
+
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    /* background: #fff; */
+    padding: 2rem;
+    border-radius: 8px;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    border: 1px solid #7D2479;
+    border-radius: 38px;
+    padding: 0.75rem;
+    font-size: 1rem;
+  }
+  
+  .contact-form button {
+    margin-left: 200px;
+    width: 170px;
+    border-radius: 38px;
+    display: inline-block;
+    background: #b13b88;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  .contact-form button:hover {
+    background: #9c3477;
+  }
+  
+  /* Support Team Section */
+  .support-team {
+    /* Background image with optional cover styling */
+    background-size: cover;
+    position: relative;
+    padding: 3rem 1rem;
+    text-align: center;
+    color: black; /* Adjust if your background image is dark or light */
+  }
+  
+  /* Optional overlay for the support section as well */
+  .support-team::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background: rgba(0, 0, 0, 0.4); Dark overlay */
+    z-index: 0;
+  }
+  
+  .support-team h2 {
+    position: relative;
+    z-index: 1;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+  
+  .support-cards {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  /* Each Card */
+  .support-card {
+    background: #fff;
+    color: black; /* Card text color */
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: center;
+  }
+  
+  /* Symbol or icon in the middle of each card */
+  .card-symbol {
+    margin: 0 auto 1rem auto;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* If using an <i> icon */
+  .card-symbol i {
+    color: #fff;
+    font-size: 1.8rem;
+  }
+  
+  /* If using an <img> instead of <i> */
+  .card-symbol img {
+    max-width: 32px;
+    height: auto;
+  }
+  
+  .support-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Responsive for larger screens (3 columns) */
+  @media (min-width: 768px) {
+    .support-cards {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .support-card {
+      flex: 1;
+      margin: 0 1rem;
+    }
+  }
+  

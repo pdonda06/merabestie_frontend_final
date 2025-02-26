@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Playwrite+MX:wght@100..400&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #FFD7FD;
+    color: black;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    max-height: 150px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* LOGO SECTION */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+/* .brand-name {
+    margin-left: 8px;
+    font-size: 1.8rem;
+    font-family: "Italianno", serif;
+    font-weight: 200;
+    display: none;
+    letter-spacing: 1px;
+    
+    
+} */
+
+.brand-name {
+  margin-left: 8px;
+  font-size: 2.5rem; 
+  font-family: "Italianno", serif;
+  font-weight: 400; 
+  letter-spacing: 1.5px;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+
+@media (min-width: 768px) {
+    .brand-name {
+        display: block;
+    }
+}
+
+/* DESKTOP MENU */
+.menu-links {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .menu-links {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .menu-links a {
+        text-decoration: none;
+        color: black;
+        font-size: 1rem;
+        transition: color 0.3s;
+    }
+
+    .menu-links a:hover {
+        color: gray;
+    }
+}
+
+/* ICON GROUP */
+.icon-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icon {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    width: 30px;
+    height: 30px;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+/* MOBILE MENU ICON */
+.menu-icon {
+    cursor: pointer;
+    width: 30px;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .menu-icon {
+        display: none;
+    }
+}
+
+/* MOBILE DROPDOWN MENU */
+.dropdown-menu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #FFD7FD;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.dropdown-menu.open {
+    max-height: 300px;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 12px;
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.dropdown-menu a:hover {
+    background: #e0b3e6;
+}

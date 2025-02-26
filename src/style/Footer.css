@@ -1,0 +1,136 @@
+/* Footer.css */
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Poppins:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Khand:wght@300;400;500;600;700&family=Playwrite+MX:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: #FFD7FD;
+  color: #7D2479;
+  padding: 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.footer-left, .footer-right {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+.brand-name {
+  font-size: 50px;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.links-column {
+  margin-right: 20px;
+}
+
+.links-column a {
+  color: #7D2479;
+  text-decoration: none;
+  display: block;
+  margin: 5px 0;
+}
+
+.links-column a:hover {
+  text-decoration: underline;
+}
+
+.footer-text {
+  font-size: 14px;
+  max-width: 400px;
+}
+
+.left-align {
+  text-align: left;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: #7D2479;
+  width: 50%;
+  border: #FFD7FD;
+  border-radius: 10px;
+  padding: 4px;
+  margin: 4px;
+  position: relative;
+  top: 10px;
+  left: 5%;
+}
+
+.social-icon img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+
+
+@media (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .footer-left, .footer-right {
+    max-width: 50%;
+  }
+  
+}
+
+@media(min-width:300px && max-width:1024px) {
+  .social-icons{
+    position: relative;
+    left: 25%;
+  }
+}
+
+.khand-light {
+  font-family: "Khand", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.khand-regular {
+  font-family: "Khand", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.khand-medium {
+  font-family: "Khand", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.khand-semibold {
+  font-family: "Khand", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.khand-bold {
+  font-family: "Khand", serif;
+  font-weight: 700;
+  font-style: normal;
+}
